@@ -4,8 +4,7 @@ mod cell;
 
 fn main() {
     nannou::app(model)
-        .update(update)
-        .simple_window(view)
+		.loop_mode(LoopMode::Wait)
         .run();
 }
 
