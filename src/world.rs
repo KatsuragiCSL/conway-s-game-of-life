@@ -56,7 +56,7 @@ impl World {
 			for j in 0..self.num_cols {
 				let mut cell = self.get_cell(i, j).unwrap();
 				if cell.get_liveness() && [2, 3].iter().any(|&i| i == cell.get_alive_neighbors()) {
-					cell.set_liveness(true);; // keep alive
+					cell.set_liveness(true); // keep alive
 				} else if (!cell.get_liveness() && [3].iter().any(|&i| i == cell.get_alive_neighbors())) {
 					cell.set_liveness(true); // born
 				} else {

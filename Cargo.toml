@@ -8,3 +8,4 @@ edition = "2021"
 
 [dependencies]
 nannou = "0.18.1"
+x11 = { version = "2.21.0", features = ["xlib"] }
